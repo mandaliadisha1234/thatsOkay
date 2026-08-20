@@ -158,7 +158,7 @@ export default function Home() {
           <div className="container about-grid">
             <div className="about-photo">
               <Image
-                src="/images/home-disha-2.jpg"
+                src="/images/home-disha-main.jpg"
                 alt="Disha portrait"
                 width={800}
                 height={1000}
