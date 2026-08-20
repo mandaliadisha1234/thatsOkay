@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import PageShell from "./components/PageShell";
 import ScrollReveal from "./components/ScrollReveal";
@@ -35,10 +36,16 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hero-visual" aria-label="Disha portrait placeholder">
-              <div className="hero-photo-placeholder">
-                <span>Replace with a warm, natural portrait of Disha</span>
-              </div>
+            <div className="hero-visual image-frame">
+              <Image
+                src="/images/home-disha.jpg"
+                alt="Disha portrait"
+                width={800}
+                height={1000}
+                style={{ width: "100%", height: "auto" }}
+                sizes="(max-width: 900px) 100vw, 50vw"
+                priority
+              />
               <div className="hero-note">
                 Psychology-informed. Human-centred. Practical.
               </div>
@@ -149,7 +156,16 @@ export default function Home() {
         <ScrollReveal>
 <section className="section about-strip about-orange" id="about">
           <div className="container about-grid">
-            <div className="about-photo">Disha photo placeholder</div>
+            <div className="about-photo">
+              <Image
+                src="/images/home-disha-2.jpg"
+                alt="Disha portrait"
+                width={800}
+                height={1000}
+                style={{ width: "100%", height: "auto" }}
+                sizes="(max-width: 900px) 100vw, 40vw"
+              />
+            </div>
             <div>
               <div className="eyebrow">Meet Disha</div>
               <h2 className="section-title">The person behind That&apos;s Okay.</h2>
@@ -164,7 +180,7 @@ export default function Home() {
                 <div className="stat"><strong>MSc</strong><span>Work & Organisational Psychology</span></div>
               </div>
               <div style={{marginTop: 30}}>
-                <Link className="pill-link" href="/about">Meet Disha</Link>
+                <Link className="pill-link" href="/about/disha">Meet Disha</Link>
               </div>
             </div>
           </div>
@@ -182,7 +198,7 @@ export default function Home() {
             <div className="three-grid">
               {["Articles", "Events & Workshops"].map((title) => (
                 <article className="resource-card" key={title}>
-                  <div className="resource-image" />
+                  <div className={`resource-image ${title === "Articles" ? "resource-articles" : "resource-events"}`} />
                   <div className="resource-body">
                     <h3>{title}</h3>
                     <p>Coming soon.</p>

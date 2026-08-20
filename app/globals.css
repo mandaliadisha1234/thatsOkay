@@ -173,7 +173,7 @@ p { margin: 0; }
   border-radius: 34px;
   background: var(--sage-light);
   position: relative;
-  overflow: hidden;
+  height: fit-content;
 }
 
 .hero-photo-placeholder {
@@ -583,10 +583,7 @@ p { margin: 0; }
   content: "";
   position: absolute;
   border-radius: 50%;
-  border: 1px solid rgba(255,255,255,.35);
 }
-.about-photo::before { width: 170px; height: 170px; animation: orbit 8s linear infinite; }
-.about-photo::after { width: 250px; height: 250px; animation: orbit 12s linear infinite reverse; }
 
 .reveal {
   opacity: 0;
@@ -757,4 +754,78 @@ p { margin: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   .testimonial-card::after { animation: none; }
+}
+
+/* ---------- Easy image replacement ---------- */
+.image-frame,
+.about-photo,
+.resource-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-home-disha { background-image: url('/images/home-disha.jpg'); }
+.image-disha-hero { background-image: url('/images/disha-hero.jpg'); }
+.image-disha-about { background-image: url('/images/disha-about.jpg'); }
+.resource-articles { background-image: url('/images/resource-articles.jpg'); }
+.resource-events { background-image: url('/images/resource-events.jpg'); }
+
+.image-disha-hero,
+.image-disha-about,
+.image-home-disha {
+  background-color: var(--sage-light);
+}
+
+.faq-list {
+  max-width: 900px;
+}
+
+.faq-item {
+  border-top: 1px solid var(--border);
+  padding: 0;
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-weight: 600;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary span { font-family: "DM Sans", sans-serif; font-size: 1.5rem; font-weight: 400; }
+.faq-item p { max-width: 760px; padding: 0 50px 28px 0; color: #5b5750; }
+
+.about-link-section { background: var(--cream-2); }
+
+@media (max-width: 900px) {
+  .nav-links { gap: 18px; }
+}
+
+.image-frame,
+.about-photo,
+.hero-visual,
+.resource-image {
+  overflow: hidden;
+  background-color: var(--sage-light); /* fallback while loading */
+}
+
+.image-frame img,
+.about-photo img,
+.hero-visual img,
+.resource-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

@@ -63,10 +63,10 @@ export default function Individuals() {
         <section className="hero hero-page">
           <div className="container">
             <div className="eyebrow">For Individuals</div>
-            <h1>Support for where you are — and where you want to go.</h1>
+            <h1>Support to navigate life, well-being and work.</h1>
             <p className="hero-sub">
               Psychology-informed wellness and development coaching to help you
-              understand yourself, navigate challenges and build a life and
+              understand yourself, work through challenges and build a life and
               career that works for you.
             </p>
           </div>
@@ -161,23 +161,6 @@ export default function Individuals() {
 
         <ScrollReveal>
           <section className="section">
-            <div className="container">
-              <div className="eyebrow">Our approach</div>
-              <h2 className="section-title">
-                The goal isn&apos;t to change who you are.
-              </h2>
-
-              <p className="section-copy">
-                It&apos;s to help you understand yourself better, recognise
-                what works for you and develop practical tools that support the
-                life and work you want.
-              </p>
-            </div>
-          </section>
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <section className="section brand-section">
             <div className="container">
               <div className="eyebrow">How it works</div>
               <h2 className="section-title">
