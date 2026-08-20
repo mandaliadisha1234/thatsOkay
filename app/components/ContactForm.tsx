@@ -2,6 +2,8 @@
 
 import { FormEvent, useState } from "react";
 
+const WEB3FORMS_ACCESS_KEY = "61932fe1-2992-4f0b-8f4c-a254cd10ac11";
+
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [error, setError] = useState("");
@@ -14,15 +16,25 @@ export default function ContactForm() {
     const form = event.currentTarget;
     const data = Object.fromEntries(new FormData(form).entries());
 
+    // honeypot check — Web3Forms also has its own spam filtering, but keep yours too
+    if (data.website) {
+      setStatus("success"); // silently "succeed" for bots
+      return;
+    }
+
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New enquiry from ${data.name}`,
+          ...data,
+        }),
       });
 
       const result = await response.json();
-      if (!response.ok) throw new Error(result.error || "Unable to send your message.");
+      if (!result.success) throw new Error(result.message || "Unable to send your message.");
 
       form.reset();
       setStatus("success");
@@ -66,9 +78,9 @@ export default function ContactForm() {
         <span>How can we help? *</span>
         <textarea name="message" required maxLength={5000} rows={7} placeholder="Tell us a little about what you're looking for..." />
       </label>
-      
-      <input name="consent" type="checkbox"/>
-      <span style={{fontFamily:"sans-serif", fontSize:"14px"}}>I consent to receive emails from That's Okay.</span>
+
+      <input name="consent" type="checkbox" />
+      <span style={{ fontFamily: "sans-serif", fontSize: "14px" }}>I consent to receive emails from That's Okay.</span>
 
       <div className="form-actions">
         <button className="btn btn-primary" type="submit" disabled={status === "sending"}>
