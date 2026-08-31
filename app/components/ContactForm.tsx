@@ -80,13 +80,13 @@ export default function ContactForm() {
       </label>
 
       <input name="consent" type="checkbox" />
-      <span style={{ fontFamily: "sans-serif", fontSize: "14px" }}>I consent to receive emails from That's Okay.</span>
+      <span style={{ fontFamily: "sans-serif", fontSize: "14px" }}>I consent to That's okay to process my information</span>
 
       <div className="form-actions">
         <button className="btn btn-primary" type="submit" disabled={status === "sending"}>
           {status === "sending" ? "Sending…" : "Send enquiry"}
         </button>
-        {status === "success" && <p className="form-success" role="status">Thank you — your message has been sent. We&apos;ll be in touch.</p>}
+        {status === "success" && <p className="form-success" role="status">Thank you — your message has been sent. We'll be in touch.</p>}
         {status === "error" && <p className="form-error" role="alert">{error}</p>}
       </div>
     </form>

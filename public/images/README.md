@@ -1,4 +1,4 @@
-# That's Okay. image files
+# That's Okay image files
 
 To replace an image, simply replace the file with the same filename. No code changes are required.
 

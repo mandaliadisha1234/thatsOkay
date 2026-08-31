@@ -41,7 +41,7 @@ export async function POST(request: Request) {
     }
 
     const html = `
-      <h2>New enquiry from That's Okay.</h2>
+      <h2>New enquiry from That's Okay</h2>
       <p><strong>Name:</strong> ${escapeHtml(name)}</p>
       <p><strong>Email:</strong> ${escapeHtml(email)}</p>
       <p><strong>Enquiry type:</strong> ${escapeHtml(type || "Not specified")}</p>

@@ -15,9 +15,9 @@ export default function LetsTalk() {
       <main>
         <section className="hero hero-page">
           <div className="container">
-            <div className="eyebrow">Let&apos;s Talk</div>
-            <h1>You don&apos;t need to have everything figured out before reaching out.</h1>
-            <p className="hero-sub">Whether you&apos;re looking for support for yourself or exploring how we could support your organisation, start with a conversation.</p>
+            <div className="eyebrow">Let's Talk</div>
+            <h1>You don't need to have everything figured out before reaching out.</h1>
+            <p className="hero-sub">Whether you're looking for support for yourself or exploring how we could support your organisation, start with a conversation.</p>
           </div>
         </section>
 
@@ -42,7 +42,7 @@ export default function LetsTalk() {
               <div>
                 <div className="eyebrow">Get in touch</div>
                 <h2 className="section-title">How can we help?</h2>
-                <p className="section-copy">You can share as much or as little as feels useful. We&apos;ll use your message to understand what you&apos;re looking for and suggest the most appropriate next step.</p>
+                <p className="section-copy">You can share as much or as little as feels useful. We'll use your message to understand what you're looking for and suggest the most appropriate next step.</p>
                 <p className="section-copy">📧 <a href="mailto:connect@thatsokay.ie">connect@thatsokay.ie</a></p>
                 <p className="section-copy">📞 <a href="mailto:connect@thatsokay.ie">+353 89 977 6431</a></p>
               </div>
@@ -54,7 +54,7 @@ export default function LetsTalk() {
         <ScrollReveal>
           <section className="section brand-section">
             <div className="container">
-              <h2 className="section-title">Hear from people we&apos;ve worked with.</h2>
+              <h2 className="section-title">Hear from people we've worked with.</h2>
               <hr/>
               <Link className="btn btn-secondary" href="/testimonials">View testimonials</Link>
             </div>

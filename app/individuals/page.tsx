@@ -77,7 +77,7 @@ export default function Individuals() {
             <div className="container">
               <div className="eyebrow">You might be here because...</div>
               <h2 className="section-title">
-                You don&apos;t have to have it all figured out.
+                You don't have to have it all figured out.
               </h2>
 
               <div className="four-grid">
@@ -105,7 +105,7 @@ export default function Individuals() {
               </h2>
 
               <p className="section-copy">
-                Whether you&apos;re looking for ongoing 1-to-1 coaching or want
+                Whether you're looking for ongoing 1-to-1 coaching or want
                 to better understand your natural strengths, we can start with
                 where you are and build from there.
               </p>
@@ -121,7 +121,7 @@ export default function Individuals() {
                       <p>{body}</p>
 
                       {/* <div className="service-card-label">
-                        This could help if you&apos;re looking to:
+                        This could help if you're looking to:
                       </div> */}
 
                       {/* <ul className="service-list">

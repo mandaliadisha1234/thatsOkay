@@ -14,10 +14,10 @@ export default function About() {
       <main>
         <section className="hero hero-page">
           <div className="container">
-            <div className="eyebrow">Why That&apos;s Okay.?</div>
-            <h1>People don&apos;t need to be fixed.</h1>
+            <div className="eyebrow">Why That's Okay?</div>
+            <h1>People don't need to be fixed.</h1>
             <p className="hero-sub">
-              That&apos;s Okay brings psychology, wellbeing and development together to help
+              That's Okay brings psychology, wellbeing and development together to help
               people and organisations understand themselves, find practical ways
               forward and create healthier ways of living and working.
             </p>
@@ -27,10 +27,10 @@ export default function About() {
         <ScrollReveal>
           <section className="section brand-section">
             <div className="container">
-              <div className="eyebrow">The idea behind That&apos;s Okay.</div>
+              <div className="eyebrow">The idea behind That's Okay</div>
               <h2 className="section-title">Start where you are.</h2>
               <p className="section-copy">
-                That&apos;s Okay brings psychology, wellbeing and development together to help
+                That's Okay brings psychology, wellbeing and development together to help
                 people and organisations understand themselves, find practical ways
                 forward and create healthier ways of living and working.
               </p>
@@ -66,7 +66,7 @@ export default function About() {
           <section className="section about-link-section">
             <div className="container">
               <div className="eyebrow">Meet Disha</div>
-              <h2 className="section-title">The person behind That&apos;s Okay.</h2>
+              <h2 className="section-title">The person behind That's Okay</h2>
               <p className="section-copy">
                 A Wellness coach & Strength assessment practitioner helping people and organisations navigate real-life and workplace challenges.
               </p>

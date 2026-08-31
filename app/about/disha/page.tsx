@@ -16,7 +16,7 @@ export default function AboutDisha() {
           <div className="container hero-grid">
             <div>
               <div className="eyebrow">Meet Disha</div>
-              <h1>The person behind That&apos;s Okay.</h1>
+              <h1>The person behind That's Okay</h1>
               <p className="hero-sub">A Wellness coach & Strength assessment practitioner helping people and organisations navigate real-life and workplace challenges.</p>
             </div>
             <div className="hero-visual image-frame">
@@ -48,7 +48,7 @@ export default function AboutDisha() {
               </div>
               <div>
                 <div className="eyebrow">About Disha</div>
-                <h2 className="section-title">The person behind That&apos;s Okay.</h2>
+                <h2 className="section-title">The person behind That's Okay</h2>
                 <p className="section-copy">
                   Disha is an Organisational Psychologist, Wellness coach & Strength assessment practitioner
                   bringing together psychology, coaching and practical tools to help people and
@@ -67,8 +67,8 @@ export default function AboutDisha() {
         <ScrollReveal>
           <section className="section">
             <div className="container">
-              <div className="eyebrow">Why That&apos;s Okay.?</div>
-              <h2 className="section-title">People don&apos;t need to be fixed.</h2>
+              <div className="eyebrow">Why That's Okay?</div>
+              <h2 className="section-title">People don't need to be fixed.</h2>
               <p className="section-copy">Sometimes we need space to understand where we are, the right tools to move forward and support that works for us.</p>
             </div>
           </section>

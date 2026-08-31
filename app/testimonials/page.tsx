@@ -38,7 +38,7 @@ export default function TestimonialsPage() {
                 <div className="empty-testimonials">
                   <div className="eyebrow">Coming soon</div>
                   <h2>The first testimonials will appear here soon.</h2>
-                  <p>We&apos;re building this collection carefully, with permission from the people who choose to share their experiences.</p>
+                  <p>We're building this collection carefully, with permission from the people who choose to share their experiences.</p>
                 </div>
               )}
             </div>

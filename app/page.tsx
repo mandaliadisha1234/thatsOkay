@@ -56,10 +56,10 @@ export default function Home() {
         <ScrollReveal>
 <section className="section brand-section">
           <div className="container">
-            <div className="eyebrow">The idea behind That&apos;s Okay.</div>
+            <div className="eyebrow">The idea behind That's Okay</div>
             <h2 className="section-title">Start where you are.</h2>
             <p className="section-copy">
-              That&apos;s Okay brings psychology, wellbeing and development together to help
+              That's Okay brings psychology, wellbeing and development together to help
               people and organisations understand themselves, find practical ways
               forward and create healthier ways of living and working.
             </p>
@@ -133,7 +133,7 @@ export default function Home() {
         <ScrollReveal>
 <section className="section">
           <div className="container">
-            <div className="eyebrow">The That&apos;s Okay. approach</div>
+            <div className="eyebrow">The That's Okay approach</div>
             <h2 className="section-title">Understand. Discover. Develop. Thrive.</h2>
             <div className="four-grid">
               {[
@@ -168,7 +168,7 @@ export default function Home() {
             </div>
             <div>
               <div className="eyebrow">Meet Disha</div>
-              <h2 className="section-title">The person behind That&apos;s Okay.</h2>
+              <h2 className="section-title">The person behind That's Okay</h2>
               <p className="section-copy">
                 Disha is an Organisational Psychologist, Wellness coach & Strength assessment practitioner
                 bringing together psychology, coaching and practical tools to help people and

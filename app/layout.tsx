@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     siteName: "That’s Okay.",
   },
   robots: { index: true, follow: true },
+  icons: {
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({

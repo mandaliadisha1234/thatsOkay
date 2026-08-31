@@ -1,4 +1,4 @@
-# That's Okay. — Website V3 polish
+# That's Okay — Website V3 polish
 
 This iteration keeps the existing brand direction and adds a production-focused polish pass.
 

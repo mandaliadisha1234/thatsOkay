@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
 :root {
-  --cream: #F7F2E9;
+  --cream: #f5f5f5;
   --cream-2: #EFE7DA;
   --sage: #A8B89A;
   --sage-light: #DDE6D5;
   --terracotta: #C8755D;
   --terracotta-dark: #A85B47;
   --charcoal: #292825;
+  --orange: #f7552a;
+  --dark-blue: #052166;
   --white: #FFFFFF;
   --border: rgba(41, 40, 37, 0.12);
 }
@@ -33,6 +35,7 @@ h1, h2, h3 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 600;
   line-height: 1.08;
+  color: #0d329d;
 }
 
 p { margin: 0; }
@@ -105,8 +108,10 @@ p { margin: 0; }
   top: 0;
   z-index: 20;
   background: rgba(247,242,233,.92);
+  /* background: linear-gradient(to right,rgba(239, 109, 3, 0.92) 1vh, rgba(247,242,233,.92) 100vh); */
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
+  overflow: none;
 }
 
 .nav-inner {
@@ -338,7 +343,7 @@ p { margin: 0; }
 
 .footer {
   padding: 58px 0 30px;
-  background: var(--charcoal);
+  background: var(--dark-blue);
   color: var(--cream);
 }
 
@@ -353,6 +358,7 @@ p { margin: 0; }
   font-size: .85rem;
   letter-spacing: .08em;
   text-transform: uppercase;
+  color: var(--terracotta)
 }
 
 .footer a, .footer p {
@@ -446,7 +452,8 @@ p { margin: 0; }
   padding: 10px 15px;
   border: 1px solid rgba(41,40,37,.16);
   border-radius: 999px;
-  background: rgba(255,255,255,.55);
+  background: #f7552a;
+  color: #ffffff;
 }
 .nav-cta:hover { background: var(--white); transform: translateY(-2px); }
 .nav-cta span { transition: transform .2s ease; }
@@ -629,9 +636,18 @@ p { margin: 0; }
     padding: 0 20px;
     background: rgba(247,242,233,.98);
     border-bottom: 0 solid var(--border);
-    transition: max-height .35s ease, padding .35s ease, border-bottom-width .35s ease;
+    transition:
+      max-height .35s ease,
+      padding .35s ease,
+      border-bottom-width .35s ease;
   }
-  .mobile-menu.is-open { max-height: 430px; padding: 14px 20px 22px; border-bottom-width: 1px; }
+  .mobile-menu.is-open {
+    max-height: 60vh;
+    overflow-y: scroll;
+    padding: 14px 20px 22px;
+    border-bottom-width: 1px;
+    -webkit-overflow-scrolling: touch;
+  }
   .mobile-menu > a,
   .mobile-menu-group > a { padding: 12px 0; font-weight: 600; }
   .mobile-menu-group { display: grid; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 5px 0; padding: 8px 0; }
@@ -770,6 +786,11 @@ p { margin: 0; }
 .image-disha-about { background-image: url('/images/disha-about.jpg'); }
 .resource-articles { background-image: url('/images/resource-articles.jpg'); }
 .resource-events { background-image: url('/images/resource-events.jpg'); }
+.logo{
+  width: 200px;
+  height: 45px;
+}
+.header-logo{background-image: url('/images/thats-okay-logo.jpg'); }
 
 .image-disha-hero,
 .image-disha-about,

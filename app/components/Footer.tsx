@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,7 +7,15 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <div className="logo">That&apos;s Okay<span className="logo-dot">.</span></div>
+            <div className="logo">
+              <Image
+                src="/images/thats-okay-logo-white_.png"
+                alt="Thats okay"
+                width={200}
+                height={45}
+                sizes="100vw, 40vw"
+              />
+            </div>
             <p>Psychology-informed wellness consultancy for people and workplaces.</p>
           </div>
           <div>
@@ -28,12 +37,12 @@ export default function Footer() {
             <Link href="/about">About</Link>
             <Link href="/resources">Resources</Link>
             <Link href="/testimonials">Testimonials</Link>
-            <Link href="/lets-talk">Let&apos;s Talk</Link>
+            <Link href="/lets-talk">Let's Talk</Link>
             <a href="mailto:connect@thatsokay.ie">connect@thatsokay.ie</a>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} All rights reserved Disha Collective (Trading as That&apos;s Okay.). Disha Collective is a sole trader business registered in Dublin, Ireland.</p>
+          <p>© {new Date().getFullYear()} All rights reserved Disha Collective (Trading as That's Okay). Disha Collective is a sole trader business registered in Dublin, Ireland.</p>
         </div>
       </div>
     </footer>
