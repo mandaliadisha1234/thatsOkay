@@ -747,7 +747,7 @@ p { margin: 0; }
   animation: testimonialOrbit 12s ease-in-out infinite alternate;
 }
 .testimonial-mark { font-family: Georgia, serif; font-size: 5rem; line-height: .7; color: var(--terracotta, #b96f52); opacity: .7; }
-.testimonial-card p { font-family: Georgia, serif; font-size: clamp(1.2rem, 2vw, 1.6rem); line-height: 1.55; max-width: 38rem; }
+.testimonial-card p { font-family: Georgia, sans-serif; font-size: clamp(0.8rem, 1.5vw, 1rem); line-height: 1.55; max-width: 38rem; }
 .testimonial-card footer { display: grid; gap: .2rem; margin-top: 1.5rem; font-size: .9rem; }
 .testimonial-card footer span { opacity: .65; }
 .empty-testimonials {

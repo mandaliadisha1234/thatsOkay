@@ -80,7 +80,7 @@ export default function ContactForm() {
       </label>
 
       <input name="consent" type="checkbox" />
-      <span style={{ fontFamily: "sans-serif", fontSize: "14px" }}>I consent to That's okay to process my information</span>
+      <span style={{ fontFamily: "sans-serif", fontSize: "14px" }}>I consent to That’s Okay processing this information to respond to my enquiry.</span>
 
       <div className="form-actions">
         <button className="btn btn-primary" type="submit" disabled={status === "sending"}>

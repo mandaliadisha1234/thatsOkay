@@ -16,8 +16,8 @@ export default function TestimonialsPage() {
         <section className="hero hero-page">
           <div className="container">
             <div className="eyebrow">Testimonials</div>
-            <h1>What people have shared about their experience.</h1>
-            <p className="hero-sub">Real experiences, shared with permission. Testimonials are added with permission and published by That’s Okay.</p>
+            <h1>Our Client Experiences</h1>
+            <p className="hero-sub">Hear from the people and organisations we’ve supported as they share their experiences of working with That’s Okay.</p>
           </div>
         </section>
 

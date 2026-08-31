@@ -57,7 +57,14 @@ export default function About() {
           <section className="section">
             <div className="container">
               <div className="eyebrow">Our values</div>
-              <h2 className="section-title">Confidentiality, Psychological safety and Inclusivity</h2>
+              <h2 className="section-title">What Matters to Us</h2>
+              <ul>
+                <br/><li><b>Human First</b> — We put people at the heart of everything we do, creating spaces built on trust, empathy and confidentiality.</li>
+                <br/><li><b>Psychological Wellbeing</b> — We support healthier ways of working and living by fostering psychological safety, resilience and sustainable growth.</li>
+                <br/><li><b>Inclusion & Belonging</b> — We champion workplaces and communities where everyone feels valued, respected, included and able to contribute.</li>
+              </ul>
+
+
             </div>
           </section>
         </ScrollReveal>

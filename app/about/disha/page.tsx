@@ -17,7 +17,7 @@ export default function AboutDisha() {
             <div>
               <div className="eyebrow">Meet Disha</div>
               <h1>The person behind That's Okay</h1>
-              <p className="hero-sub">A Wellness coach & Strength assessment practitioner helping people and organisations navigate real-life and workplace challenges.</p>
+              <p className="hero-sub">An Organisational & Wellness Coach supporting people and organisations navigate real-life and workplace challenges.</p>
             </div>
             <div className="hero-visual image-frame">
               <Image
@@ -48,37 +48,24 @@ export default function AboutDisha() {
               </div>
               <div>
                 <div className="eyebrow">About Disha</div>
-                <h2 className="section-title">The person behind That's Okay</h2>
+                <h2 className="section-title">Oganisational Psychologist</h2>
                 <p className="section-copy">
-                  Disha is an Organisational Psychologist, Wellness coach & Strength assessment practitioner
-                  bringing together psychology, coaching and practical tools to help people and
-                  organisations navigate real-life and workplace challenges.
+                  Disha is the Founder of That’s Okay, an Organisational Psychologist, Wellness Coach and Strengths Profile Practitioner. With over a decade of experience across psychology, people management, neurodiversity and organisational development, she has worked with individuals, SMEs and corporate organisations across India, the UK and Ireland.
+                  Having lived and worked across these three countries, Disha brings a broad understanding of people, workplaces and the different challenges that come with navigating change and uncertainty. Through That’s Okay, her vision is to create a space where people feel supported, psychologically safe and empowered to start exactly where they are in life and their career — without judgement and without the pressure of having it all figured out.
                 </p>
-                <div className="stats">
-                  <div className="stat"><strong>12+</strong><span>years experience</span></div>
-                  <div className="stat"><strong>8+</strong><span>years working in Ireland</span></div>
-                  <div className="stat"><strong>MSc</strong><span>Work & Organisational Psychology</span></div>
+
+                <br/>
+                <div>
+                  <h2>Qualifications & Accreditations</h2>
+                  <ul>
+                    <li>MSc in Work and Organisational Psychology — University of Limerick, Ireland</li>
+                    <li>Postgraduate Certificate in Psychiatry — Cardiff University, UK</li>
+                    <li>Bachelor of Arts in Psychology — India</li>                    
+                    <li>Strengths-Profile Practitioner</li>
+                    <li>Health & Wellness Coaching Certification — Institute of Health Sciences</li>
+                  </ul>
                 </div>
               </div>
-            </div>
-          </section>
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <section className="section">
-            <div className="container">
-              <div className="eyebrow">Why That's Okay?</div>
-              <h2 className="section-title">People don't need to be fixed.</h2>
-              <p className="section-copy">Sometimes we need space to understand where we are, the right tools to move forward and support that works for us.</p>
-            </div>
-          </section>
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <section className="section brand-section">
-            <div className="container">
-              <div className="eyebrow">Our values</div>
-              <h2 className="section-title">Confidentiality, Psychological safety and Inclusivity</h2>
             </div>
           </section>
         </ScrollReveal>
