@@ -254,21 +254,21 @@ p { margin: 0; }
 
 .pathway p { max-width: 480px; margin-top: 18px; color: #5b5750; }
 
-.service-grid {
+.services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
   margin-top: 46px;
 }
 
-.service {
+.services {
   padding: 34px;
   border-top: 2px solid var(--terracotta);
 }
 
-.service h3 { font-size: 2rem; }
+.services h3 { font-size: 2rem; }
 
-.service p { margin-top: 12px; color: #5b5750; }
+.services p { margin-top: 12px; color: #5b5750; }
 
 .about-strip {
   background: var(--terracotta);
@@ -849,4 +849,141 @@ p { margin: 0; }
   display: block;
   width: 100%;
   height: auto;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  opacity: 0.7;
+  transform: translateY(-3px);
+}
+
+.footer-socials svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 46px;
+}
+
+.service-group {
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--white);
+}
+
+.service-group-header {
+  padding: 34px 34px 30px;
+}
+
+.service-group-eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.service-group-header h3 {
+  margin: 0 0 12px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.service-group-header p {
+  margin: 0;
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+.service-list {
+  padding: 2%
+}
+
+.service {
+  padding: 24px 0;
+  border-radius: 1px solid var(--border);
+}
+
+.service h4 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.service p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+
+/* Individuals */
+.service-group-individuals {
+  background: var(--sage-light);
+}
+
+.service-group-individuals .service-group-header {
+  background: var(--sage);
+}
+
+
+/* Organisations */
+.service-group-organisations {
+  background: var(--cream-2);
+}
+
+.service-group-organisations .service-group-header {
+  background: var(--terracotta);
+}
+
+
+/* Make the header text work on the darker backgrounds */
+.service-group-individuals .service-group-header,
+.service-group-organisations .service-group-header {
+  color: var(--white);
+}
+
+.service-group-individuals .service-group-eyebrow,
+.service-group-organisations .service-group-eyebrow {
+  opacity: 0.85;
+}
+
+
+/* Mobile */
+@media (max-width: 620px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .service-group-header {
+    padding: 28px 24px 26px;
+  }
+
+  .service-list {
+    padding: 0 24px 24px;
+  }
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PageShell from "./components/PageShell";
 import ScrollReveal from "./components/ScrollReveal";
+import { testimonials } from "./testimonials/data";
 
 const individualServices = [
   ["Wellbeing", "Support for stress, overwhelm, balance, boundaries and sustainable ways of living and working."],
@@ -31,8 +32,8 @@ export default function Home() {
                 to create healthier, more inclusive workplaces.
               </p>
               <div className="hero-actions">
-                <Link className="btn btn-secondary" href="#individuals">For Individuals</Link>
-                <Link className="btn btn-secondary" href="#organisations">For Organisations</Link>
+                <Link className="btn btn-secondary" href="/individuals">For Individuals</Link>
+                <Link className="btn btn-secondary" href="/organisations">For Organisations</Link>
               </div>
             </div>
 
@@ -113,19 +114,51 @@ export default function Home() {
             <div className="eyebrow">How we can help</div>
             <h2 className="section-title">Support designed around people, not labels.</h2>
             <div className="service-grid">
-              {individualServices.map(([title, body]) => (
-                <article className="service" key={title}>
-                  <h3>{title}</h3>
-                  <p>{body}</p>
-                </article>
-              ))}
-              {organisationServices.map(([title, body]) => (
-                <article className="service" key={title}>
-                  <h3>{title}</h3>
-                  <p>{body}</p>
-                </article>
-              ))}
+
+            {/* INDIVIDUALS */}
+            <div className="service-group service-group-individuals">
+              <div className="service-group-header">
+                <span className="service-group-eyebrow">For individuals</span>
+                <h3>Support for you</h3>
+                <p>
+                  Personal support designed around where you are in life, work,
+                  relationships and wellbeing.
+                </p>
+              </div>
+
+              <div className="service-list">
+                {individualServices.map(([title, body]) => (
+                  <article className="service" key={title}>
+                    <h4>{title}</h4>
+                    <p>{body}</p>
+                  </article>
+                ))}
+              </div>
             </div>
+
+
+            {/* ORGANISATIONS */}
+            <div className="service-group service-group-organisations">
+              <div className="service-group-header">
+                <span className="service-group-eyebrow">For organisations</span>
+                <h3>Support for your people</h3>
+                <p>
+                  Psychology-informed support for healthier workplaces, stronger
+                  teams and more inclusive cultures.
+                </p>
+              </div>
+
+              <div className="service-list">
+                {organisationServices.map(([title, body]) => (
+                  <article className="service" key={title}>
+                    <h4>{title}</h4>
+                    <p>{body}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+
+          </div>
           </div>
         </section>
 </ScrollReveal>
@@ -190,12 +223,13 @@ export default function Home() {
         <ScrollReveal>
 <section className="section resources" id="resources">
           <div className="container">
-            <div className="eyebrow">Resources</div>
-            <h2 className="section-title">Resources to help you navigate life, work and wellbeing.</h2>
-            <p className="section-copy">
+            <div className="eyebrow">Testimonials</div>
+            <h2 className="section-title">Our Client Experiences</h2>
+            {/* <p className="section-copy">
               Articles, guides, events and practical tools will grow here over time.
-            </p>
-            <div className="three-grid">
+            </p> */}
+            <p className="hero-sub">Hear from the people and organisations we’ve supported as they share their experiences of working with That’s Okay.</p>
+            {/* <div className="three-grid">
               {["Articles", "Events & Workshops"].map((title) => (
                 <article className="resource-card" key={title}>
                   <div className={`resource-image ${title === "Articles" ? "resource-articles" : "resource-events"}`} />
@@ -205,7 +239,30 @@ export default function Home() {
                   </div>
                 </article>
               ))}
-            </div>
+            </div> */}
+             <ScrollReveal>
+              <section className="section">
+                <div className="container">
+                  {testimonials.length ? (
+                    <div className="testimonial-grid">
+                      {testimonials.map((item, index) => (
+                        <blockquote className="testimonial-card" key={`${item.name}-${index}`}>
+                          <div className="testimonial-mark">“</div>
+                          <p>{item.quote}</p>
+                          <footer><strong>{item.name}</strong>{item.context && <span>{item.context}</span>}</footer>
+                        </blockquote>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="empty-testimonials">
+                      <div className="eyebrow">Coming soon</div>
+                      <h2>The first testimonials will appear here soon.</h2>
+                      <p>We're building this collection carefully, with permission from the people who choose to share their experiences.</p>
+                    </div>
+                  )}
+                </div>
+              </section>
+            </ScrollReveal>
           </div>
         </section>
 </ScrollReveal>

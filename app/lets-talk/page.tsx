@@ -51,7 +51,7 @@ export default function LetsTalk() {
           </section>
         </ScrollReveal>
 
-        <ScrollReveal>
+        {/* <ScrollReveal>
           <section className="section brand-section">
             <div className="container">
               <h2 className="section-title">Hear from people we've worked with.</h2>
@@ -59,7 +59,7 @@ export default function LetsTalk() {
               <Link className="btn btn-secondary" href="/testimonials">View testimonials</Link>
             </div>
           </section>
-        </ScrollReveal>
+        </ScrollReveal> */}
       </main>
     </PageShell>
   );

@@ -58,7 +58,7 @@ export default function About() {
             <div className="container">
               <div className="eyebrow">Our values</div>
               <h2 className="section-title">What Matters to Us</h2>
-              <ul>
+              <ul style={{fontSize:'15px'}}>
                 <br/><li><b>Human First</b> — We put people at the heart of everything we do, creating spaces built on trust, empathy and confidentiality.</li>
                 <br/><li><b>Psychological Wellbeing</b> — We support healthier ways of working and living by fostering psychological safety, resilience and sustainable growth.</li>
                 <br/><li><b>Inclusion & Belonging</b> — We champion workplaces and communities where everyone feels valued, respected, included and able to contribute.</li>

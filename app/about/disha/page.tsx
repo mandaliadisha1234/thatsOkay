@@ -17,7 +17,7 @@ export default function AboutDisha() {
             <div>
               <div className="eyebrow">Meet Disha</div>
               <h1>The person behind That's Okay</h1>
-              <p className="hero-sub">An Organisational & Wellness Coach supporting people and organisations navigate real-life and workplace challenges.</p>
+              <p className="hero-sub">An Organisational Psychologist & Wellness Coach supporting people and organisations navigate real-life and workplace challenges.</p>
             </div>
             <div className="hero-visual image-frame">
               <Image
@@ -50,14 +50,20 @@ export default function AboutDisha() {
                 <div className="eyebrow">About Disha</div>
                 <h2 className="section-title">Oganisational Psychologist</h2>
                 <p className="section-copy">
-                  Disha is the Founder of That’s Okay, an Organisational Psychologist, Wellness Coach and Strengths Profile Practitioner. With over a decade of experience across psychology, people management, neurodiversity and organisational development, she has worked with individuals, SMEs and corporate organisations across India, the UK and Ireland.
-                  Having lived and worked across these three countries, Disha brings a broad understanding of people, workplaces and the different challenges that come with navigating change and uncertainty. Through That’s Okay, her vision is to create a space where people feel supported, psychologically safe and empowered to start exactly where they are in life and their career — without judgement and without the pressure of having it all figured out.
+                  Disha is the Founder of That’s Okay, an Organisational Psychologist, Wellness Coach and Strengths Profile Practitioner. 
+                </p>
+                <p className="section-copy">  
+                  With over a decade of experience across psychology, people management, neurodiversity and organisational development, she has worked with individuals, SMEs and corporate organisations across India, the UK and Ireland.
+                  Having lived and worked across these three countries, Disha brings a broad understanding of people, workplaces and the different challenges that come with navigating change and uncertainty. 
+                </p>
+                <p className="section-copy">
+                  Through That’s Okay, her vision is to create a space where people feel supported, psychologically safe and empowered to start exactly where they are in life and their career — without judgement and without the pressure of having it all figured out.
                 </p>
 
                 <br/>
                 <div>
                   <h2>Qualifications & Accreditations</h2>
-                  <ul>
+                  <ul style={{lineHeight:'10px'}}>
                     <li>MSc in Work and Organisational Psychology — University of Limerick, Ireland</li>
                     <li>Postgraduate Certificate in Psychiatry — Cardiff University, UK</li>
                     <li>Bachelor of Arts in Psychology — India</li>                    

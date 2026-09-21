@@ -1,5 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faLinkedinIn,
+  // faFacebookF,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -16,8 +22,13 @@ export default function Footer() {
                 sizes="100vw, 40vw"
               />
             </div>
-            <p>Psychology-informed wellness consultancy for people and workplaces.</p>
+
+            <p>
+              Psychology-informed wellness consultancy for people and
+              workplaces.
+            </p>
           </div>
+
           <div>
             <h3>Individuals</h3>
             <Link href="/individuals">Wellbeing</Link>
@@ -25,22 +36,59 @@ export default function Footer() {
             <Link href="/individuals">Career & Work</Link>
             <Link href="/individuals">Neurodivergent Coaching</Link>
           </div>
+
           <div>
             <h3>Organisations</h3>
             <Link href="/organisations">Workplace Wellbeing</Link>
-            <Link href="/organisations">Neurodiversity & Inclusion</Link>
-            <Link href="/organisations">Leadership & People Development</Link>
+            <Link href="/organisations">
+              Neurodiversity & Inclusion
+            </Link>
+            <Link href="/organisations">
+              Leadership & People Development
+            </Link>
             <Link href="/organisations">Teams & Culture</Link>
           </div>
+
           <div>
             <h3>Explore</h3>
             <Link href="/about">About</Link>
             <Link href="/resources">Resources</Link>
             <Link href="/testimonials">Testimonials</Link>
             <Link href="/lets-talk">Let's Talk</Link>
-            <a href="mailto:connect@thatsokay.ie">connect@thatsokay.ie</a>
+            <a href="mailto:connect@thatsokay.ie">
+              connect@thatsokay.ie
+            </a>
+            <div className="footer-socials">
+              <a
+                href="https://www.instagram.com/thatsokay.ie"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/thats-okay"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
           </div>
         </div>
+          
+
+            {/* <a
+              href="FACEBOOK_LINK_HERE"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <FontAwesomeIcon icon={faFacebookF} />
+            </a> */}
+          </div>
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} All rights reserved Disha Collective (Trading as That's Okay). Disha Collective is a sole trader business registered in Dublin, Ireland.</p>
         </div>
